@@ -1,0 +1,27 @@
+.timeLine {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  .timeLineitem {
+    position: relative;
+    // padding: 10px;
+    width: calc(100% / 5);
+    .timeLineitemTail {
+      position: absolute;
+      top: 15%;
+      right: -10%;
+    }
+    .content {
+      .icon {
+        width: 46px;
+        height: 46px;
+        background: #c4c4c4;
+        border-radius: 50%;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

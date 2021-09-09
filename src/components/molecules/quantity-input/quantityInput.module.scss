@@ -1,0 +1,33 @@
+@import "../../../styles/custom_vars";
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .input {
+    border-width: 0;
+    border-style: inset;
+    border-color: white;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  button {
+    flex: 0 0 auto;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    border-color: $primary;
+    overflow: visible;
+    padding: 6px;
+    span {
+      width: 100%;
+      display: flex;
+      align-items: inherit;
+      justify-content: inherit;
+    }
+  }
+}

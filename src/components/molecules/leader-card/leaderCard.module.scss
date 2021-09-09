@@ -1,0 +1,52 @@
+@import "../../../styles/custom_vars";
+
+.cardWrapper {
+    border-radius: 8px;
+    position: relative;
+    background: white;
+    padding-left: 15%;
+
+    .avatarWrapper {
+        position: absolute;
+        left: 16px;
+        right: 85%;
+        top: 15px;
+        bottom: 67.16%;
+        .avatar {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+        .leaderName {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 22px;
+            letter-spacing: 0.5px;
+            color: $text-color;
+        }
+        .detail {
+            color: $subText-color;
+            .distance {
+                margin-right: 8px;
+            }
+            .rate {
+                margin-left: 8px;
+                .icon {
+                    margin-bottom: 3px;
+                }
+            }
+            .members {
+                margin-left: 8px;
+            }
+        }
+        .address {
+            color: $subText-color;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../../styles/custom_vars";
+
+.wrapper {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: auto 4px 8px 4px;
+  .deliveryStatus {
+    padding: 8px 8px 0 8px;
+    font-size: 12px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .content {
+      display: flex;
+      flex-direction: row;
+      margin: 0 4px 16px 4px;
+      .avatar {
+        height: 72px;
+        width: 72px;
+      }
+      .title {
+        margin-left: 1rem;
+        .name {
+          font-size: 12px;
+          font-weight: bold;
+        }
+        .price {
+          margin-bottom: 8px;
+          font-size: 12px;
+        }
+      }
+    }
+    .CTAbtn {
+      margin: auto 4px 8px 4px;
+      .detailCTA {
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .buyBackCTA {
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+}

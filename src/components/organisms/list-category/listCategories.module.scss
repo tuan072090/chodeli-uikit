@@ -1,0 +1,30 @@
+@import "../../../styles/custom_vars";
+
+.categories {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 1rem;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .categoryCardImg {
+        padding: 1rem;
+        .avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: #c4c4c4;
+        }
+        .title {
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            line-height: 18px;
+            height: 36px;
+            overflow-y: hidden;
+            color: $text-color;
+        }
+    }
+}

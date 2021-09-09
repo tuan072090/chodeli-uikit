@@ -1,0 +1,26 @@
+@import "../../../styles/custom_vars";
+
+.list_card {
+  border-radius: 12px;
+  padding: 15px;
+  border: 0.5px solid $border-color;
+
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    color: $text-color;
+  }
+  .address {
+    font-size: 12px;
+    color: $subText-color;
+  }
+  &:hover{
+    border: 1px solid $primary;
+  }
+  &.selected{
+    border: 1px solid $primary;
+  }
+
+}
