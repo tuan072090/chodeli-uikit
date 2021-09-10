@@ -1,6 +1,6 @@
 import React, {memo, useEffect, useState} from "react";
 import styles from './button.module.scss';
-import {ButtonProps} from "../../../share/data-types";
+import {ButtonProps} from "./Button.type";
 import Colors from "../../../share/utils/colors";
 import Loader from "../loader";
 

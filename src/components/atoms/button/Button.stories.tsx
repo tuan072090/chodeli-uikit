@@ -1,9 +1,8 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentStory, ComponentMeta, Meta } from '@storybook/react';
 
 import Button  from './';
-import {ButtonProps} from "../../../share/data-types";
-import Wrapper from "../../Wrapper";
+import {ButtonProps} from "./Button.type";
 
 export default {
     title: 'Atoms/Button',
@@ -22,18 +21,10 @@ export default {
             control: { type: 'radio' },
         },
         onClick: { action: 'clicked' }
-    },
-    decorators: [
-        (Story) => (
-            <Wrapper>
-                <Story/>
-            </Wrapper>
-        ),
-    ],
-} as ComponentMeta<typeof Button>;
+    }
+} as Meta;
 
-
-const Template: ComponentStory<typeof Button> = (args: ButtonProps) => <Button {...args} />;
+const Template = (args: ButtonProps) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
