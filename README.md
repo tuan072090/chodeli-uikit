@@ -10,3 +10,10 @@ or
 
 ### Component documentation here
 [https://tuan072090.github.io/chodeli-uikit](https://tuan072090.github.io/chodeli-uikit)
+
+
+### How to setup
+- Typescript config
+- Storybook for development
+- Rollup to build
+- Gitpages for online document
