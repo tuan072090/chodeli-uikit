@@ -1,6 +1,6 @@
 {
   "name": "chodeli-uikit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Set of UI kit components for Cho Deli web project",
   "repository": "https://github.com/tuan072090/chodeli-uikit",
   "main": "build/index.js",
