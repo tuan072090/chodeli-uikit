@@ -3,7 +3,7 @@ import { Minus, Plus } from "react-feather";
 import styles from "./quantityInput.module.scss";
 import Colors from "../../../share/utils/colors";
 
-type QuantityProps = {
+export type QuantityProps = {
     quantity: number,
     onChange: (quantity: number) => void
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-type InfoRecipType = {
+export type InfoRecipType = {
     fullname?: String,
     promotion?: string,
     methot?: string,

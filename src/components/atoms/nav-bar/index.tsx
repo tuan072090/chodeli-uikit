@@ -1,6 +1,6 @@
 import React from "react";
 
-type anchorType = "bottom" | "top";
+type anchorType = "bottom" | "top" | 'right' | 'left';
 type backgroudType = "primary" | "white";
 export interface NavbarProps extends React.PropsWithChildren<any> {
     anchor?: anchorType;
