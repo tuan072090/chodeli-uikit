@@ -1,9 +1,6 @@
 import React from "react";
 import styles from './image.module.scss';
-
-interface ImageProps extends React.PropsWithChildren<any> {
-    src: string
-}
+import {ImageProps} from "./Image.type";
 
 const Image: React.FC<ImageProps> = ({ src, ...props }) => {
 

@@ -1,6 +1,6 @@
 import React, {memo} from "react";
-import {TextInputProps} from "../../../share/data-types";
 import styles from "./textInput.module.scss";
+import {TextInputProps} from "./TextInput.type";
 
 const TextInput: React.FC<TextInputProps> = memo(({status = "default", size="medium", type, placeholder, ...props}) => {
 

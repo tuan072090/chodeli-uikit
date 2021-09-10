@@ -1,12 +1,7 @@
 import React from "react";
 import styles from './loader.module.scss';
 import Colors from "../../../share/utils/colors";
-import {StatusType} from "../../../share/data-types";
-
-type LoaderProps = {
-    status?: StatusType,
-    className?: string
-}
+import {LoaderProps} from "./Loader.type";
 
 const ColorOptions = {
     "primary": Colors.primary,
@@ -17,17 +12,17 @@ const ColorOptions = {
     "default": '#ffffff'
 }
 
-const Loader:React.FC<LoaderProps> = ({status = "default", className = ""}) => {
+const Loader: React.FC<LoaderProps> = ({status = "default", className = ""}) => {
 
     //  Pure css loader
     let loaderColor = Colors["bodyText"]
-    if(status){
+    if (status) {
         loaderColor = ColorOptions[status] || loaderColor
     }
-    return(
+    return (
         <div className={`${styles.ldsSpinner} ${className}`}>
             {
-                [1,2,3,4,5,6,7,8,9,10,11,12].map(item => {
+                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(item => {
                     return <div key={item} style={{backgroundColor: loaderColor}}/>
                 })
             }

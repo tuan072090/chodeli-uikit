@@ -1,18 +1,12 @@
 import React from "react";
+import {ErrorProps} from "./FormControlError.type";
 
 const errorMessageMapping = {
     required: "Thiếu thông tin",
     minLength: "Quá ngắn",
     maxLength: "Quá dài",
     min: "Quá nhỏ",
-    max: "Quá lơn"
-}
-
-type ErrorProps = {
-    error?: {
-        type: "required" | "minLength" | "maxLength" | "min" | "max",
-        message: string
-    }
+    max: "Quá lớn"
 }
 
 const FormControlError = ({error}: ErrorProps) => {
