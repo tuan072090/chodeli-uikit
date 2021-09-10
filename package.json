@@ -2,7 +2,9 @@
   "name": "chodeli-uikit",
   "version": "0.1.3",
   "description": "Set of UI kit components for Cho Deli web project",
-  "repository": "https://github.com/tuan072090/chodeli-uikit",
+  "repository": "https://github.com/tuan072090/chodeli-uikit.git",
+  "bugs": "https://github.com/tuan072090/chodeli-uikit/issues",
+  "homepage": "https://github.com/tuan072090/chodeli-uikit",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
